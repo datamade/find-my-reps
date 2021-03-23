@@ -4,6 +4,8 @@ My Reps helps you locate and contact your federal, state, county and local elect
 
 For more, read our launch blog post: "[We find your reps so you don't have to](https://datamade.us/blog/we-find-your-reps-so-you-dont-have-to)".
 
+**Custom installations**: If you would like assistance setting up a customized version of this tool, contact DataMade: info@datamade.us
+
 ## Demo site: [myreps.datamade.us](http://myreps.datamade.us)
 
 ![My Reps](https://datamade.us/images/blog/2016-07-26-we-find-your-reps-so-you-dont-have-to/img1.jpg)
@@ -30,9 +32,19 @@ cd my-reps
 
 You can use [GitHub Desktop](https://desktop.github.com/) instead if you are not familiar with the command line.
 
-#### 3. Add your Google Maps API key
+#### 3. Add your Google API key
 
-For the address search to work, you'll need to get a new Google Maps API key. You can get yours and enable it by following these instructions: https://developers.google.com/maps/documentation/javascript/get-api-key
+For the address search, map and representative lookup to work, you'll need to get a Google API key. You can get yours and enable it by following these instructions: https://developers.google.com/maps/documentation/javascript/get-api-key
+
+You'll need to make sure that you enable the following API services from Google:
+
+* Geocoding API
+* Geolocation API
+* Maps Javascript API
+* Google Civic Information API
+* Places API
+
+Read Google's instructions on how to enable these services: https://support.google.com/googleapi/answer/6158841?hl=en
 
 When you get a key, set the `google_api_key` in `_config.yml`.
 
@@ -150,12 +162,12 @@ We used the following open source tools:
 * Derek Eder - developer, content
 * Eric van Zanten - developer
 
-## Errors / Bugs
+## Errors and Bugs
 
 If something is not behaving intuitively, it is a bug, and should be reported.
 Report it here: https://github.com/datamade/my-reps/issues
 
-## Note on Patches/Pull Requests
+## Note on Patches and Pull Requests
 
 * Fork the project.
 * Make your feature addition or bug fix.
